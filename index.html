@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>this is first page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                width: 40%;
+                border: 1px solid black;
+                margin: auto;
+                padding: 30px;
+                font-size: 18px;
+                background: grey;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Registration Form</h1>
+        <form action="RegisterServlet" method="POST">
+        <table>
+            <tr><td>Username: </td>
+                <td> <input type="text" name="username" placeholder="enter user name"></td>
+            </tr>
+             <tr><td>Password: </td>
+                <td> <input type="password" name="password" placeholder="enter password"></td>
+            </tr>
+             <tr><td>Address: </td>
+                <td> <input type="text" name="address" placeholder="enter address"></td>
+            </tr>
+             <tr><td>Mobile No: </td>
+                <td> <input type="text" name="mobile" placeholder="enter mobile number"></td>
+            </tr>
+             <tr><td>Select Gender: </td>
+                 <td> <input type="radio" name="gender" value="male">Male &nbsp; &nbsp;
+                 <input type="radio" name="gender" value="female">Female</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    select your courses
+                </td>
+                        <td><select name="course" >
+                                <option value="java">java</option>
+                                <option value="python">python</option>
+                                <option value="android">android</option>
+                                <option value="c">c</option>
+                                <option value="flutter">flutter</option>
+                                
+                    </select>  </td>
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    <input type="checkbox" value="checked" name="condition"/>
+                </td>
+                <td>
+                    Agree terms and condition
+                </td>
+                 
+            </tr>
+            
+            <tr>
+                <td> <button type="submit">submit</button>
+                    <button type="reset">reset</button>
+                </td>
+            </tr>
+        </table>
+        </form>
+        </div>
+    </body>
+</html>
